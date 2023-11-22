@@ -1,0 +1,108 @@
+<!--
+How to access an open link target in the same widdwow, without disturbing
+the exissting content 
+A. you can use "iFrame " to embed any external document into the current document. Link target can be defined as iframe. 
+-->   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open content in same window</title>
+    <link rel=" stylesheet" href="fonts/all.css">
+    <style>
+        header{
+            font-size: 30px;
+            text-align: center;
+            background-color: darkcyan;
+            color: white;
+            padding: 20px;
+            border-radius: 30px;
+
+        }
+        footer{
+            background-color: darkcyan;
+            text-align: center;
+            font-style: italic;
+            color: white;
+            border-radius: 30px;
+        }
+
+        section{
+            height: 450px;
+        }
+        .leftPanel{
+            width: 200px;
+            float: left;
+            font-size: 20px;
+        }
+        .rightPanel{
+            width: 600px;
+            float: left;
+            margin-left: 50px;
+        }
+        ul{
+            list-style: none;
+           
+        }
+
+        li{
+            border: 1px solid darkcyan;
+            margin-top: 20px;
+            height: 40px;
+            text-align: left;
+            background-color: lightcyan;
+            border-radius: 20px;
+            box-shadow: 2px 3px 4px darkcyan;
+            padding: 10px;
+            background-color: lightcyan;
+           
+
+       
+        }
+        li:hover{
+            background-color:yellow
+        }
+        iframe{
+            border-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color:black
+
+
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <span class="fa fa-shopping-cart">shopping online</span>
+    </header>
+    <section>
+        <div class="leftPanel">
+           <ul>
+            <li><span class="fa fa-home"></span><a href="pages/home.html" target="iframe">Home</a></li>
+            <li><span class="fa fa-tv"></span><a href="pages/electronics.html" target="iframe">Electronics</a></li>
+            <li><span class="fa fa-shoe-prints"></span><a href="pages/fashion.html" target="iframe">fashion</a></li>
+            <li><span class="fa fa-tshirt"></span><a href="pages/footwear.html" target="iframe">Footwear</a></li>
+           </ul>
+        </div>
+        <div class="rightPanel">
+            <iframe src="pages/home.html" name="iframe" width="1250px" height="440px"></iframe>
+
+        </div>
+    </section>
+    <footer>
+        <div>
+            &copy ;coppywrtire
+        </div>
+        <div>
+            Electronics | Footwear | fashion | Contact |
+        </div>
+    </footer>
+    
+</body>
+</html>
