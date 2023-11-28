@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sudo class element effects</title>
+    <style>
+        /* p::first-letter{
+          color: red;
+          font-size: 40px;
+        } */
+        p::first-line{
+            background-color: yellow;
+        }
+        p::before{
+            content: "this is paragraph ";
+            background-color: aqua;
+        }
+        p::after{
+            content: "this is sudo effects of after properties";
+        }
+
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+        }
+        li::before{
+            content: "|";
+        }
+    </style>
+</head>
+<body>
+    <p>sudo class elements effects</p>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+</body>
+</html>

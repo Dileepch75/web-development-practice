@@ -1,0 +1,500 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    /* border: 2px solid red; */
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:white;
+    color: black;
+    position: relative;
+    /* margin-bottom: 20px; */
+    /* box-shadow:inset -1px -6px 15px #003264 ; */
+    box-shadow: 0 0 30px 1px #a9c7fd;
+    
+}
+header h2{
+    font-size: 3vw;
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+
+}
+nav{
+    /* border:2px solid yellow; */
+    display: flex;
+    padding: 20px;
+    font-size: 1.7vw;
+}
+nav ul{
+    /* border:2px solid blue; */
+    list-style-type: none;
+    display: flex;
+    gap:20px;
+}
+
+nav>ul>li{
+    border-bottom: 2px solid transparent;
+
+}
+nav>ul>li>a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black;
+    font-weight: bold;
+}
+nav>ul>li:hover{
+    border-bottom: 2px solid #3f78e0;
+} 
+
+#Home{
+    /*  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3vw;
+    background-color: white;
+}
+/* #55a630 */
+#Home .developer-details{
+    /* border:2px solid green; */
+    font-size: 50px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.developer-details h2 span{
+    color:#3f78e0;
+    font-size: 50px;
+}
+.developer-details button{
+    width: 40%;
+    padding: 10px;
+    font-size: 22px;
+    background-color: white;
+    border: 3px solid #3f78e0 ;
+    border-radius: 25px;
+}
+.developer-details button:hover{
+    background-color:#3f78e0;
+    border:3px solid white;
+}
+.developer-details button a{
+    color:#3f78e0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    text-decoration: none;
+}
+.developer-details button:hover a{
+   color:white;
+}
+
+
+
+#Home .developer-image{
+    height: 32vw;
+    width:32vw;
+    border:5px solid white;
+    background-image: url("/images/viratKohli.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#About{
+    /* border:2px solid yellow; */
+    background-image:radial-gradient(circle at center,#2464dc,#8dc0f4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4vw;
+    color:white;
+    padding: 5vw 3vw;
+}
+#About h2{
+    font-size: 5vw;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1);
+    text-decoration: underline 3px solid transparent;
+}
+#About h2:hover{
+    text-decoration: underline 3px solid white;
+    transform: scale(1.1);
+    
+}
+#About p{
+    font-size: 25px;
+    text-align: justify;
+}
+#Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4vw;
+    padding: 4vw 3vw 3vw 3vw;
+
+}
+#Skills h2{
+    font-size: 5vw;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1);
+    text-decoration: underline 3px solid transparent;
+
+}
+#Skills h2:hover{
+    text-decoration: underline 3px solid black;
+    transform: scale(1.1);
+
+}
+#Skills .skill-container{
+    display: flex;
+    /* border:2px solid green; */
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 7vw 3vw;
+
+}
+.skill-container .developer-skills:hover .fa-brands{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1);
+    
+}
+
+.skill-container .developer-skills:hover .fa-brands{
+    transform: scale(1.1);
+}
+
+.skill-container .developer-skills{
+    box-shadow: 0px 0px 70px 1px rgb(199, 234, 248);
+
+}
+
+.skill-container .html{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color:orangered;
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.skill-container .html:hover{
+    box-shadow: 0 0 60px 2px rgb(252, 133, 89);
+}
+
+.skill-container .css{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color:#214ce5;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+.skill-container .css:hover{
+    box-shadow: 0 0 70px 1px #4a70fc;
+}
+.skill-container .js{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 20px;
+    color:#f0dc4e;
+    transition-property: all;
+    transition-duration: 1s;
+
+
+}
+
+.skill-container .js:hover{
+    box-shadow: 0 0 60px 2px #f0dc4e;
+}
+.skill-container .react{
+
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 20px;
+    color:#66dbfb;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+
+.skill-container .react:hover{
+    box-shadow: 0 0 60px 2px #66dbfb;
+}
+
+#Projects{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:6vw;
+    padding: 4vw 3vw 3vw 3vw;
+    background-image:radial-gradient(circle at center,#2464dc,#8dc0f4);
+    color:white;
+}
+#Projects h2{
+    font-size: 5vw;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1);
+    text-decoration: underline 3px solid transparent;
+
+}
+#Projects h2:hover{
+    text-decoration: underline 3px solid white;
+    transform: scale(1.1);
+
+}
+
+#Projects .project-cards{
+    /* border:2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2vw;
+    
+}
+
+.project-cards .card1-img{
+    height: 400px;
+    width:350px;
+    background-image: url("/images/shopping-card.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+
+}
+.card1-img:hover .card1-details{
+    bottom: 0;
+}
+.card1-img .card1-details{
+    /* border:2px solid blue; */
+    width: 100%;
+    background-color:white;
+    color:black;
+    box-shadow: 0 0 40px 2px gainsboro;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2vw;
+    position: absolute;
+    bottom: -200px;
+    transition-property: all;
+    transition-duration: 1.5s;
+    
+}
+.card1-details h3{
+    font-size: 30px;
+}
+.card1-details button{
+    
+        width: 40%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: white;
+        border: 3px solid #3f78e0 ;
+        border-radius: 25px;
+}
+    .card1-details button:hover{
+        background-color:#3f78e0;
+        border:3px solid white;
+    }
+    .card1-details  a{
+        color:#3f78e0;
+        text-decoration: none;
+    }
+    .card1-details button:hover a{
+       color:white;
+    }
+
+#Contact{
+    border:2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5vw;
+    padding: 4vw 3vw 3vw 3vw;
+}
+#Contact h2{
+    font-size: 5vw;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1);
+    text-decoration: underline 3px solid transparent;
+
+}
+#Contact h2:hover{
+    text-decoration: underline 3px solid black;
+    transform: scale(1.1);
+
+}
+#Contact .bottom-container{
+    /* border:2px solid yellowgreen; */
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 2px grey;
+
+}
+.bottom-container .left-container{
+    /* border:2px solid red; */
+    width:30%;
+    border-radius: 20px;
+    /* box-shadow: 0 0 20px 2px grey; */
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+    align-items: center;
+
+}
+.bottom-container .left-container h3{
+    font-size: 40px;
+}
+.bottom-container .left-container h4{
+    font-size: 22px;
+    font-weight: normal;
+}
+bottom-container .left-container p{
+    font-size: 20px;
+}
+.bottom-container .left-container .links-container{
+    display: flex;
+    width:80%;
+    justify-content: space-between;
+}
+.left-container .links-container{
+    color:#3f78e0;
+    padding: 0 2vw;
+    font-size: 20px;
+}
+
+.bottom-container .right-container{
+  /* border:2px solid red; */
+  display: flex;
+}
+.right-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap:2.5vw;
+    padding: 2vw;
+    font-size: 20px;
+}
+.right-container form label{
+    cursor: pointer;
+    display: flex;
+    gap:1.5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-container form label input{
+    outline: none;
+    border: 2px solid black;
+    padding: 0.5vw;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.right-container form label input:hover{
+    border: 2px solid #3f78e0;
+}
+.right-container form textarea{
+    outline: none;
+    border: 2px solid black;
+    padding: 0.5vw;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.right-container form textarea:hover{
+    border:2px solid #3f78e0
+}
+.right-container form button{
+    width: 100%;
+    padding: 7px;
+    font-size: 18px;
+    background-color: white;
+    border: 3px solid #3f78e0 ;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.right-container form button:hover{
+    background-color:#3f78e0;
+    border:3px solid white;
+}
+.right-container form button a{
+    color:#3f78e0;
+    text-decoration: none;
+}
+.right-container form button:hover a{
+   color:white;
+}
+
+#Contact .top-links{
+    display: flex;
+    /* border:2px solid red; */
+    
+}
+.top-links ul{
+    /* border:2px solid blue; */
+    list-style-type: none;
+    display: flex;
+    gap:5vw;
+ 
+}
+
+.top-links>ul>li{
+    border-bottom: 2px solid transparent;
+
+}
+.top-links>ul>li>a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#3f78e0;
+    font-weight: bold;
+}
+.top-links>ul>li:hover{
+    border-bottom: 2px solid black;
+} 
+
+
+
+
+
+
+
