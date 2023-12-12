@@ -348,7 +348,9 @@ nav>ul>li:hover{
     align-items: center;
     gap:5vw;
     padding: 4vw 3vw 3vw 3vw;
+
 }
+
 #Contact h2{
     font-size: 5vw;
     transition-property: all;
